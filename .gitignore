@@ -5,8 +5,7 @@
 .idea/
 
 # Android-specific files
-Src/UI.Droid/Resources/Resource.Designer.cs
-Src/TestHarness.Droid/Resources/Resource.Designer.cs
+src/*/Resources/Resource.Designer.cs
 
 # MFractor
 .droidres
@@ -224,13 +223,11 @@ FakesAssemblies/
 
 # Visual Studio 6 workspace options file
 *.opt
-**/lifeband-app*.txt
 
 # other log files and stuff
 
 # cake build tool binaries
 Scripts/cake/tools/
-
 
 # Rider/IntelliJ workspace options file
 **/.idea
