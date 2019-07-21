@@ -2,6 +2,8 @@
 
 Originally fetched from https://github.com/xamarin/XamarinComponents/tree/master/Android/ARCore (based on the blog post at https://blog.xamarin.com/augmented-reality-xamarin-android-arcore). 
 
+If your dev environment can't find the `andy.obj` and `andy_shadow.obj` files in the `Assets` folder, then they can be downloaded from here: https://github.com/xamarin/XamarinComponents/tree/master/Android/ARCore/samples/HelloAR/Assets (thanks to user @ramiss for pointing it out). Unfortunately `*.obj` files are usually tagged in .gitignore files, and so are usually ignored when commits are added to a repo (which is probably what happened here).
+
 It didn't work out of the box any more. It had references to Android bindings projects for ARCore (`arcore.aar`) and Java.OpenGL (`obj.jar`) files in a 'externals' directory, which didn't exist.
 
 Had to pull down the entire repo and then run the build script (referenced by the `README.md` at the above linked location), which failed (it couldn't find the `libs` target). However it ran for long enough that it was able to pull down the `arcore.aar` and `obj.java` files into a newly created `externals` directory before it died.
